@@ -82,9 +82,6 @@ https://github.com/samratashok/nishang
         [String]
         $MagicString,
 
-        [Parameter(Position = 2, Mandatory = $False, Parametersetname="exfil")] [ValidateSet("gmail","pastebin","WebServer","DNS")]
-        [String]
-        $ExfilOption,
 
         [Parameter(Position = 3, Mandatory = $False, Parametersetname="exfil")] 
         [String]
